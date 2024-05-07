@@ -1,0 +1,31 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        //declarando váriaveis
+        int l = 0, somaFibonacci = 0, primeiro = 0, segundo = 1, soma = 0, proximo = 0;
+        Console.Write("Digite o valor de L: ");
+        l = int.Parse(Console.ReadLine());
+
+         // Enquanto o próximo termo for menor que L, calcula a soma
+        while (segundo < l)
+        {
+            soma += segundo;
+
+            // Calcula o próximo termo da sequência de Fibonacci
+            proximo = primeiro + segundo;
+
+            // Atualiza os valores para os próximos cálculos
+            primeiro = segundo;
+            segundo = proximo;
+        }
+
+        // Calcula e imprime a soma dos elementos da série de Fibonacci menores que L
+        somaFibonacci = soma;
+        Console.WriteLine("A soma dos elementos da série de Fibonacci menores que " + l + " é: " + somaFibonacci);
+    }
+
+
+}
