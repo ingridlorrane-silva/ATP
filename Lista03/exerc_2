@@ -1,0 +1,35 @@
+using System;
+
+class Program {
+  public static void Main () {
+    //Adaptando o código da questão anterior
+    double n= 0, positivo= 0, negativo= 0, zeros= 0, quant = 0, parcp= 0, parcn= 0, parcz= 0;
+    string opcao;
+    do{
+      Console.WriteLine("Digite um número: ");
+      n = int.Parse(Console.ReadLine());
+      soma++;
+      
+        if (n>0){
+          positivo++;
+        }
+        else if(n<0){
+          negativo++;
+        }
+        else if(n==0){
+          zeros++;
+        }
+      //Wesley mostrou uma nova forma de garantir que o programa continue sem preciusar indicar uma senha para parar
+      Console.WrireLine("Deseja continuar? (S)im ou (N)ão")
+      opcao = console.ReadLine();
+    } while(opcao.toLower() == "s");
+    // Calculando o percentual de cada uma das opções
+    parcp = posito/quant * 100;
+    parcn = negativo/quant * 100;
+    parcz = zeros/quant * 100;
+    //Saída dos dados
+    Console.WriteLine("Positivos: " + positivo + " Porcentagem de positivo: " + parcp + "%");
+    Console.WriteLine("Negativos: " + negativo + " Porcentagem de negativo: " + parcn + "%");
+    Console.WriteLine("Zeros: " + zeros + " Porcentagem de zeros: " + parcz + "%");
+  }
+}
