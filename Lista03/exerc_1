@@ -1,0 +1,31 @@
+using System;
+
+class Program {
+  public static void Main () {
+    //Declarei as variaveis
+    int n= 0, positivo= 0, negativo= 0, zeros= 0;
+    //Garante que repetisse pelo menos uma vez
+    do{
+      Console.WriteLine("Digite um número: ");
+      n = int.Parse(Console.ReadLine());
+    
+      if(n!= 123456){
+        //verificar se é positivo, negativo ou zero
+        if (n>0){
+          positivo++;
+        }
+        else if(n<0){
+          negativo++;
+        }
+        else if(n==0){
+          zeros++;
+        }
+      }
+      //Coloquei a condição de indicar a senha para que o programa pare
+    } while(n!=123456);
+    //Saída dos dados
+    Console.WriteLine("Positivos: " + positivo);
+    Console.WriteLine("Negativos: " + negativo);
+    Console.WriteLine("Zeros: " + zeros);
+  }
+}
