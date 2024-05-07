@@ -1,0 +1,32 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {   
+        //declarando váriaveis
+        int l = 0;
+        int primeiro = 0;
+        int segundo = 1;
+        Console.Write("Digite o número de elementos da sequência de Fibonacci a serem impressos: ");
+        l = int.Parse(Console.ReadLine());
+
+        // Imprime os dois primeiros termos
+        Console.Write(primeiro + " " + segundo + " ");
+
+        // Calcula e imprime os próximos termos da sequência
+        for (int i = 2; i < l; i++)
+        {
+            int proximo = primeiro + segundo;
+            Console.Write(proximo + " ");
+
+            // Atualiza os valores para os próximos cálculos
+            primeiro = segundo;
+            segundo = proximo;
+        }
+        // Pula uma linha após imprimir todos os elementos
+        Console.WriteLine(); 
+
+    }
+
+}
