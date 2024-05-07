@@ -1,0 +1,27 @@
+using System;
+
+class Program {
+    public static void Main(string[] args){
+        //declarando variaveis
+        int num =0; 
+        double fatorial = 1, e =1;
+        Console.WriteLine("Digite um número");
+        num = int.Parse(Console.ReadLine());
+      //Conferindo se é válido
+        if(num >=0){
+          //fazendo o fatorial
+        for(int i= 1; i <= num; i++){
+            fatorial *= i;
+          //calculando E 
+             e += 1.0 / fatorial;
+        }
+          //Apresentando saída
+        Console.WriteLine("O valor de {0:f2} é: " , e); 
+    }
+      //Se não for válido
+        else{
+        Console.WriteLine("Número é inválido"); 
+        }
+
+    }
+}
