@@ -1,0 +1,24 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        //declarando váriaveis
+        int n = 0;
+        double soma = 0;
+        Console.Write("Digite o valor de n: ");
+        n = int.Parse(Console.ReadLine());
+        for (int i = 1; i <= n; i++)
+        {
+            // Calcula o termo atual
+            double termo = 1.0 / i; 
+            // Adiciona o termo à soma
+            soma += termo; 
+            Console.WriteLine("Termo " + i + ": " + termo);
+        }
+
+        // Imprime o valor final da soma
+        Console.WriteLine("O valor final da soma é: {0:f2}" , soma);
+    }
+}
