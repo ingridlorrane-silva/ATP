@@ -1,0 +1,34 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+    //  Declarando variaveis necessárias
+    int q = 0, n = 0, u=0, d=0, c=0, m=0, num3 = 0, num2 = 0, num5 = 0;
+    while (q<10){
+      Console.WriteLine("Digite um número: ");
+      n = int.Parse(Console.ReadLine());
+      //Dividindo o número
+      m = n/1000;
+      c = (n%1000);
+      d = (n%100);
+      u = (n%10);
+      //Verificando se é divisível por 3 e 9
+      if(((m + c + d + u ) % 3 == 0) && ((m + c + d + u ) % 9 == 0)){
+        num3++;
+      }
+      //Verificando se é divisível por 2
+      if((u == 0) || (u == 2) || (u == 4) || (u == 6) || (u == 8)){
+        num2++;
+      }
+      //Verificando se é divisível por 5
+      if ((u == 0)|| (u == 5)){
+        num5++;
+      }
+      q++;
+    }
+    //Saindo os dados
+    Console.WriteLine("Números divisíveis por 2: " + num2);
+    Console.WriteLine ("Números divisíveis por 3 e 9: " + num3);
+    Console.WriteLine("Números divisíveis por 5: " + num5);
+  }
+}
