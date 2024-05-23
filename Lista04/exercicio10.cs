@@ -1,31 +1,31 @@
-﻿using System;
+using System;
 
 class Exercicio10
 {
     public char Categoria(int a)
     {
         //Aqui eu verifico e retorno qual o conceito dele
-        if ()
+        if (a=5 || a<=7)
         {
             return 'F';
         }
-        else if ()
+      else if (a=8 || a<=10)
         {
             return 'E';
         }
-        else if ()
+      else if (a=11 || a<=13)
         {
             return 'D';
         }
-        else if ()
+      else if (a=13 || a<=15)
         {
             return 'C';
         }
-        else if ()
+      else if (a=16 || a<=17)
         {
             return 'B';
         }
-        else if ()
+      else if (a>=18)
         {
             return 'A';
         }
@@ -44,7 +44,7 @@ class Exercicio10
         {
             Console.WriteLine("Idade inválida!");
         }
-       
+
 
     }
 }
