@@ -1,7 +1,7 @@
-﻿using System;
-class Exercicio07
+using System;
+class Exercicio10
 {
-    public void Verificar(int a)
+    public static void Verificar(int a)
     {
         //Aqui eu verifico e retorno qual o conceito dele
         if (a <= 39)
@@ -24,7 +24,7 @@ class Exercicio07
         {
             Console.WriteLine("O conceito é: B");
         }
-        else if (a > 90)
+        else if (a >= 90)
         {
             Console.WriteLine("O conceiro é: A");
         }
@@ -33,7 +33,7 @@ class Exercicio07
             Console.WriteLine("A nota é inválida");
         }
     }
-    public void Pedir()
+    public static void Pedir()
     {
         int n, med;
         //Aqui eu peço a quantidade de alunos e a média
