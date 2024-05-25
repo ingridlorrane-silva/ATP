@@ -1,10 +1,9 @@
-﻿using System;
-using System.Security.Cryptography.X509Certificates;
+using System;
 
 public class Exercicio03
 {
 
-    public void Ordem(ref int a, ref int b, ref int c)
+    public static void Ordem(ref int a, ref int b, ref int c)
     {
         //Aqui eu coloco o calculo e o parametro a ser utilizado passando os valores modificados 
         //vejo se a é maior que b
@@ -18,19 +17,15 @@ public class Exercicio03
             b = c;
         }
         //vejo se a é realmente o maior número
-        if (a < c)
+        if (a < b)
         {
-            a = c;
+            a = b;
         }
     }
-        public void Pedir()
+        public static void Pedir()
         {
             //Aqui eu vou colocar a entrada e chamar o metodo
-            int n, n1, n2, n3;
-            Console.WriteLine("Digite o número de conjuntos:");
-            n = int.Parse(Console.ReadLine());
-            for (int i = 0; i<n; i++)
-            {
+            int n1, n2, n3;
                 Console.WriteLine("Digite os números:");
                 n1 = int.Parse(Console.ReadLine());
                 n2 = int.Parse(Console.ReadLine());
@@ -40,5 +35,4 @@ public class Exercicio03
                 //Saio em ordem crescente
                 Console.WriteLine("A ordem crescente é: {0}, {1}, {2}", n3, n2, n1);
             }
-        }
 }
