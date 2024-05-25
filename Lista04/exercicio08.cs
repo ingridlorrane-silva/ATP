@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 
 class Exercicio08
 {
-    public double Calcular(int a)
+    public static double Calcular(int a)
     {
         //Calculo o valor de s
         double s = 0;
@@ -14,7 +14,7 @@ class Exercicio08
         }
         return s;
     }
-    public void Pedir()
+    public static  void Pedir()
     {
         //Peço n e chamo o metodo
         int n = 0;
