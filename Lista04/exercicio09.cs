@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 
 class Exercicio09
 {
-    public double Media()
+    public static double Media()
     {
         int q = 0, s = 0, n = 0;
         string a;
@@ -25,9 +25,9 @@ class Exercicio09
         } while (a.ToLower() == "s");
         //Aqui eu calculo a média dos aprovados e retorno ela
 
-        return s / q;
+        return (double)s / q;
     }
-    public void Pedir()
+    public static void Pedir()
     {
         //Aqui eu chamo o metodo e dou a saida
         double med = 0;
