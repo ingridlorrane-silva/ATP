@@ -1,50 +1,35 @@
 using System;
-class Exercicio07
-{
-    public static void Verificar(int a)
+
+class Exercicio06 { 
+
+    public static bool Verificar(int a)
     {
-        //Aqui eu verifico e retorno qual o conceito dele
-        if (a <= 39)
+        //aqui coloco a conferência para ver se é positivo ou não
+        if (a >= 0)
         {
-            Console.WriteLine("O conceito é: F");
+            return true;
         }
-        else if (a<=59)
-        {
-            Console.WriteLine("O conceito é: E");
-        }
-        else if(a<=69)
-        {
-            Console.WriteLine("O conceito é: D");   
-        }
-        else if (a <= 79)
-        {
-            Console.WriteLine("O conceito é: C");
-        }
-        else if (a <= 89)
-        {
-            Console.WriteLine("O conceito é: B");
-        }
-        else if (a >= 90)
-        {
-            Console.WriteLine("O conceiro é: A");
-        }
+        //se não ele é negativo
         else
         {
-            Console.WriteLine("A nota é inválida");
+            return false;
         }
+
     }
     public static void Pedir()
     {
-        int n, med;
-        //Aqui eu peço a quantidade de alunos e a média
-        Console.WriteLine("Digite o número de alunos alunos que irá verificar a média: ");
+        //Recebo o valor e chamo o metodo 
+        int n = 0;
+        Console.WriteLine("Digite um número: ");
         n = int.Parse(Console.ReadLine());
-        for (int i =0; i<n; i++)
+        //Chamo o metodo
+        if (Verificar(n))
         {
-            Console.WriteLine("Digite a média: ");
-            med = int.Parse(Console.ReadLine());
-            //Chamo o metodo
-            Verificar(med);
+            Console.WriteLine("O número {0} é posittivo.", n);
+        }
+        else
+        {
+            Console.WriteLine("O número {0} não é positivo.", n);
         }
 
     }
