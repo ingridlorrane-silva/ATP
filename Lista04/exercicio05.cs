@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 
 public class Exercicio05
 {
 
-    public int MDC(int a, int b)
+    public static int MDC(int a, int b)
     {
         //Aqui eu coloco o calculo e o parametro a ser utilizado passando valor
         int r = 0;
@@ -19,7 +19,7 @@ public class Exercicio05
     }
 
 
-    public void Pedir()
+    public static void Pedir()
     {
         //Aqui eu vou colocar a entrada e chamar o método
         int n1, n2;
