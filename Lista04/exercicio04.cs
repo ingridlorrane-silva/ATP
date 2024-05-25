@@ -1,9 +1,9 @@
-﻿using System;
+using System;
 
 public class Exercicio04
 {
 
-    public void Triangulo(int a, int b, int c)
+    public static void Triangulo(int a, int b, int c)
     {
         //Aqui eu coloco o calculo e o parametro a ser utilizado passando valor
         //Vejo se é um triangulo
@@ -33,7 +33,7 @@ public class Exercicio04
         }
 
 
-    public void Pedir()
+    public static void Pedir()
         {
             //Aqui eu vou colocar a entrada e chamar o método
             int n, n1, n2, n3;
