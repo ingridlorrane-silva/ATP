@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 
 class Exercicio06 { 
 
-    public bool Verificar(int a)
+    public static bool Verificar(int a)
     {
         //aqui coloco a conferência para ver se é positivo ou não
         if (a >= 0)
@@ -16,7 +16,7 @@ class Exercicio06 {
         }
 
     }
-    public void Pedir()
+    public static void Pedir()
     {
         //Recebo o valor e chamo o metodo 
         int n = 0;
