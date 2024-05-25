@@ -1,5 +1,5 @@
 using System;
-class Exercicio10
+class Exercicio07
 {
     public static void Verificar(int a)
     {
