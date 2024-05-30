@@ -21,8 +21,6 @@ public class Program
             Console.WriteLine("9) Para executar o exercício 09.");
             Console.WriteLine("10) Para executar o exercício 10.");
 
-            Console.WriteLine("3) Para executar o exercício 03.");
-
             escolha = int.Parse(Console.ReadLine());
 
             switch (escolha)
